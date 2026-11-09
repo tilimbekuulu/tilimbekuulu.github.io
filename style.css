@@ -110,3 +110,22 @@ footer { max-width: 1120px; margin: auto; border-top: 1px solid var(--line); pad
   .publication { padding: 1.2rem 1.1rem; border-radius: 10px; }
   section { margin-bottom: 3rem; }
 }
+
+/* ---------- Sidebar icons ---------- */
+.contact li { display: flex; align-items: center; }
+.contact a { display: inline-flex; align-items: center; }
+.icon { width: 16px; height: 16px; margin-right: .5rem; flex: none; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; color: var(--amber); }
+.icon .fill { fill: currentColor; stroke: none; }
+
+/* ---------- Key-finding callout ---------- */
+.publication .finding { background: #ecfdf5; border-left: 3px solid var(--amber); border-radius: 0 6px 6px 0; padding: .5rem .8rem; margin: .2rem 0 .7rem; }
+
+/* ---------- Lightbox ---------- */
+.paper-figure a { cursor: zoom-in; }
+#lightbox { border: 0; border-radius: 12px; padding: 1.2rem 1.2rem .9rem; max-width: min(1100px, 94vw); background: #fff; box-shadow: 0 20px 60px rgba(17, 24, 39, .25); cursor: zoom-out; }
+#lightbox::backdrop { background: rgba(17, 24, 39, .6); backdrop-filter: blur(2px); }
+#lightbox img { display: block; width: 100%; height: auto; max-height: 80vh; object-fit: contain; }
+.lightbox-caption { margin: .7rem 0 0; font-size: .88rem; color: var(--muted); text-align: center; }
+.lightbox-close { position: absolute; top: .35rem; right: .6rem; border: 0; background: none; font-size: 1.6rem; line-height: 1; color: var(--muted); cursor: pointer; }
+.lightbox-close:hover { color: var(--text); }
+.lightbox-close:focus:not(:focus-visible) { outline: none; }
